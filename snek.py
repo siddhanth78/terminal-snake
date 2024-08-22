@@ -21,12 +21,14 @@ neck = Node(head, head.x, head.y+1)
 nodes = []
 nodes.append(neck)
 
-foodflag = 0
+foodflag = 1
 
 acc = [0,1]
 
-foodx = random.randint(0, 9)
-foody = random.randint(0, 9)
+foodx = 5
+foody = 10
+
+grid[foody][foodx] = '*'
 
 available = []
 
