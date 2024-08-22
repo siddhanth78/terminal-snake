@@ -2,6 +2,7 @@ import time
 import os
 import random
 import msvcrt
+import sys
 
 os.system('cls')
 
@@ -33,6 +34,10 @@ grid[foody][foodx] = '*'
 available = []
 
 score = 0
+
+sys.stdout.write('\0337')
+sys.stdout.write('\033[?25l')
+sys.stdout.flush()
 
 while True:
 
@@ -98,4 +103,5 @@ while True:
     
     time.sleep(0.3)
     
-    os.system('cls')
+    sys.stdout.write('\0338\033[0J')
+    sys.stdout.flush()
