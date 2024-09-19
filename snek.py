@@ -62,7 +62,7 @@ while True:
     head.x += acc[0]
     head.y += acc[1]
     
-    #head.x, head.y = head.x%24, head.y%12
+    #head.x, head.y = head.x%24, head.y%12 <- Screen wrap
     
     if head.x >= len(grid[0]) or head.x < 0:
         print(f'Score: {score}')
