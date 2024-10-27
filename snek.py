@@ -18,9 +18,10 @@ grid = [['.' for i in range(24)] for j in range(12)]
  
 head = Node(None, 0, 5)
 neck = Node(head, head.x, head.y+1)
+neck_1 = Node(neck, neck.x, neck.y+1)
 
-nodes = []
-nodes.append(neck)
+nodes = [neck]
+nodes.append(neck_1)
 
 foodflag = 1
 
